@@ -1,12 +1,15 @@
 import React, { use } from 'react';
+import Country from '../Country/Country';
 
 const Countries = ({ countriesPromise }) => {
 
     const countries = use(countriesPromise)
-    console.log(countries)
     return (
         <div style={{ width: '90%', margin: 'auto' }}>
             <h1 style={{ color: 'white' }}>Travelling Countries: {countries.length}</h1>
+            {
+                countries.map(country => <Country country={country}></Country>)
+            }
         </div>
     );
 };
