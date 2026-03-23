@@ -5,7 +5,7 @@ import Header from './components/Header/Header'
 
 
 function App() {
-  const countriesPromise = fetch('https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags,region,population')
+  const countriesPromise = fetch('https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags,region,population,cca3,ccn3,cca2')
     .then(res => res.json())
   return (
     <>
@@ -18,3 +18,5 @@ function App() {
 }
 
 export default App
+
+// https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags,region,population,cca3,ccn3,cca2

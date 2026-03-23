@@ -7,13 +7,14 @@ body {
 
 
 .countryCard {
-    width: 264px !important;
-    height: 336px;
+    width: 320px;
+    height: fit-content;
     border-radius: 5px;
     box-shadow: 1px 1px 8px -0.5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     color: white;
     background-color: #2B3945;
+    margin-bottom: 20px;
 }
 
 .countryCard__flag {
@@ -25,18 +26,4 @@ body {
 .countryCard__content {
     padding: 20px 24px;
     color: white;
-}
-
-
-
-.countryCard__content ul {
-    margin-top: 10px;
-    list-style: none;
-    font-size: 14px;
-    letter-spacing: 0.25px;
-    line-height: 24px;
-}
-
-.countryCard__content ul span {
-    font-weight: 600;
 }

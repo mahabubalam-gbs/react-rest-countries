@@ -5,9 +5,11 @@ const Country = ({ country }) => {
     return (
         <div>
             <div className='countryCard'>
-                <img className='.countryCard__flag' src={country?.flags?.png} alt="" />
+                <img className='.countryCard__flag' src={country?.flags?.png
+                } alt="" />
                 <div className='countryCard__content'>
-                    <h2 style={{ fontWeight: 'bold' }}>{country?.name?.common}</h2>
+                    <h2 style={{ fontWeight: 'bold', margin: '0', padding: '0' }}>{country?.name?.common}</h2>
+                    <h4 style={{ fontWeight: 'bold' }}>{country?.name?.official}</h4>
                     <p>Population: {country?.population?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                     <p>Region: {country?.region}</p>
                     <p>Capital: {country?.capital}</p>
