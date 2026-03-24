@@ -3,17 +3,14 @@ import React from 'react';
 const Country = ({ country }) => {
     console.log(country)
     return (
-        <div>
-            <div className='countryCard'>
-                <img className='.countryCard__flag' src={country?.flags?.png
-                } alt="" />
-                <div className='countryCard__content'>
-                    <h2 style={{ fontWeight: 'bold', margin: '0', padding: '0' }}>{country?.name?.common}</h2>
-                    <h4 style={{ fontWeight: 'bold' }}>{country?.name?.official}</h4>
-                    <p>Population: {country?.population?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
-                    <p>Region: {country?.region}</p>
-                    <p>Capital: {country?.capital}</p>
-                </div>
+        <div className='countryCard'>
+            <img style={{ height: '200px', width: '100%' }} src={country?.flags?.png
+            } alt="" />
+            <div style={{ padding: '20px 24px' }}>
+                <h4 style={{ fontWeight: 'bold', margin: '0' }}>{country?.name?.official}</h4>
+                <p>Population: {country?.population?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+                <p>Region: {country?.region}</p>
+                <p>Capital: {country?.capital}</p>
             </div>
         </div>
     );
