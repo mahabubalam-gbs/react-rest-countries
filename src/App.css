@@ -21,3 +21,33 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
+.button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: dashed;
+    background-color: #41AB5D;
+    border: 0;
+    color: white;
+    font-weight: 800;
+}
+
+.button:hover {
+    /* padding: 8px 10px;
+    border-radius: 5px;
+    border: dashed; */
+    background-color: #238B45;
+    /* border: 0;
+    color: white;
+    font-weight: 700; */
+}
+
+/* .not-visited {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: dashed;
+
+    outline: 2px solid gray;
+    border: 0;
+    color: black;
+} */
