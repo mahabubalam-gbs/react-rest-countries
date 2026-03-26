@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Country = ({ country }) => {
+    const [visited, setVisited] = useState(false)
+
     const handleVisited = () => {
-        console.log('clicked')
+        setVisited(!visited)
     }
     return (
         <div className='countryCard'>
@@ -14,7 +16,8 @@ const Country = ({ country }) => {
                 <p>Population: {country?.population?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                 <p>Region: {country?.region}</p>
                 <p>Capital: {country?.capital}</p>
-                <button onClick={handleVisited} className='button'>Not Visited</button>
+                <button onClick={handleVisited} className={visited ? 'button' : 'not-visited'}>{
+                    visited ? 'Visited' : 'Not Visited'}</button>
             </div>
         </div>
     );

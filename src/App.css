@@ -33,21 +33,19 @@ body {
 }
 
 .button:hover {
-    /* padding: 8px 10px;
-    border-radius: 5px;
-    border: dashed; */
     background-color: #238B45;
-    /* border: 0;
-    color: white;
-    font-weight: 700; */
 }
 
-/* .not-visited {
-    padding: 8px 10px;
+.not-visited {
+    padding: 8px 12px;
     border-radius: 5px;
     border: dashed;
-
-    outline: 2px solid gray;
+    background-color: #FFEA00;
     border: 0;
-    color: black;
-} */
+    color: #793205;
+    font-weight: 800;
+}
+
+.not-visited:hover {
+    background-color: #FDDA0D;
+}
