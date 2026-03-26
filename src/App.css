@@ -22,7 +22,7 @@ body {
     gap: 20px;
 }
 
-.button {
+.visited {
     padding: 8px 12px;
     border-radius: 5px;
     border: dashed;
@@ -32,7 +32,7 @@ body {
     font-weight: 800;
 }
 
-.button:hover {
+.visited:hover {
     background-color: #238B45;
 }
 

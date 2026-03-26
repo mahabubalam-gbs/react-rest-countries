@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountries }) => {
     const [visited, setVisited] = useState(false)
 
     const handleVisited = () => {
-        setVisited(!visited)
+        setVisited(!visited);
+        handleVisitedCountries(country);
     }
     return (
         <div className='countryCard'>
@@ -16,7 +17,7 @@ const Country = ({ country }) => {
                 <p>Population: {country?.population?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                 <p>Region: {country?.region}</p>
                 <p>Capital: {country?.capital}</p>
-                <button onClick={handleVisited} className={visited ? 'button' : 'not-visited'}>{
+                <button onClick={handleVisited} className={visited ? 'visited' : 'not-visited'}>{
                     visited ? 'Visited' : 'Not Visited'}</button>
             </div>
         </div>
