@@ -49,3 +49,16 @@ body {
 .not-visited:hover {
     background-color: #FDDA0D;
 }
+
+.visited-countries-flags {
+    background-color: rgb(200, 200, 200);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+}
+
+.visited-countries-flags img {
+    width: 120px;
+    height: 80px;
+}
