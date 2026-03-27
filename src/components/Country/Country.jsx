@@ -17,8 +17,10 @@ const Country = ({ country, handleVisitedCountries }) => {
                 <p>Population: {country?.population?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                 <p>Region: {country?.region}</p>
                 <p>Capital: {country?.capital}</p>
-                <button onClick={handleVisited} className={visited ? 'visited' : 'not-visited'}>{
-                    visited ? 'Visited' : 'Not Visited'}</button>
+                <button
+                    onClick={handleVisited}
+                    className={visited ? 'visited' : 'not-visited'}>{
+                        visited ? 'Visited' : 'Not Visited'}</button>
             </div>
         </div>
     );

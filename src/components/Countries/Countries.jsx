@@ -7,14 +7,16 @@ const Countries = ({ countriesPromise }) => {
     const countries = use(countriesPromise)
 
     const handleVisitedCountries = (country) => {
-        console.log('country visited clicked to be added', country)
+        const newVisitedCountries = [...visitedCountries, country];
+        setVisitedCountries(newVisitedCountries)
+
     }
 
     return (
         <div style={{ width: '80%', margin: 'auto', padding: '30px 0px' }}>
             <h1 style={{ color: 'white' }}>Travelling Countries: {countries.length}</h1>
 
-            <h2 style={{ color: 'white' }}>Traveled so far: </h2>
+            <h2 style={{ color: 'white' }}>Traveled So Far: {visitedCountries.length}</h2>
 
             <div className='countries'>
                 {
