@@ -12,6 +12,7 @@ const Countries = ({ countriesPromise }) => {
 
     }
 
+
     return (
         <div style={{ width: '80%', margin: 'auto', padding: '30px 0px' }}>
             <h1 style={{ color: 'white' }}>Travelling Countries: {countries.length}</h1>
@@ -21,7 +22,7 @@ const Countries = ({ countriesPromise }) => {
             <div className='visited-countries-flags'>
                 <div >
                     {
-                        visitedCountries.map(country => <img style={{ marginRight: '10px' }} src={country?.flags?.png}></img>)
+                        visitedCountries.map(country => <img key={country.cca2} style={{ marginRight: '10px' }} src={country?.flags?.png}></img>)
                     }
                 </div>
             </div>
