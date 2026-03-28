@@ -18,5 +18,3 @@ function App() {
 }
 
 export default App
-
-// https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags,region,population,cca3,ccn3,cca2
