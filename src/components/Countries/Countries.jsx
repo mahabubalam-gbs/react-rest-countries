@@ -19,13 +19,14 @@ const Countries = ({ countriesPromise }) => {
 
             <h2 style={{ color: 'white' }}>Traveled So Far: {visitedCountries.length}</h2>
 
-            <div className='visited-countries-flags'>
+            {visitedCountries.length > 0 && <div className='visited-countries-flags'>
                 <div >
                     {
                         visitedCountries.map(country => <img key={country.cca2} style={{ marginRight: '10px' }} src={country?.flags?.png}></img>)
                     }
                 </div>
-            </div>
+            </div>}
+
 
             <div className='countries'>
                 {
