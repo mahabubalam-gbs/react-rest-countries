@@ -1,5 +1,5 @@
-##🌍 REST Countries Explorer
-#⚛️ A Modern React App to Explore Countries Worldwide
+🌍 REST Countries Explorer
+⚛️ A Modern React App to Explore Countries Worldwide
 
 🔗 Live Website:
 [https://your-live-link.com/](https://exquisite-marigold-ba127d.netlify.app/)
@@ -21,7 +21,7 @@ npm install
 ```
 npm run dev
 ```
-#📡 API Endpoint
+📡 API Endpoint
 🔹 Get All Countries
 ```
 https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags,region,population,cca3,ccn3,cca2
