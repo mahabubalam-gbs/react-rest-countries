@@ -1,10 +1,11 @@
 🌍 REST Countries Explorer
+
 ⚛️ A Modern React App to Explore Countries Worldwide
 
 🔗 Live Website:
-[https://your-live-link.com/](https://exquisite-marigold-ba127d.netlify.app/)
+[React-rest-countries](https://exquisite-marigold-ba127d.netlify.app/)
 
-#⚙️ Installation
+⚙️ Installation
 # Clone the repository
 ```
 git clone [https://github.com/mahabubalam-gbs/rest-countries-react.git](https://github.com/mahabubalam-gbs/react-rest-countries.git)
